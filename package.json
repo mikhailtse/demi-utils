@@ -1,0 +1,19 @@
+{
+  "name": "demi-utils",
+  "version": "1.0.0",
+  "description": "reactjs and js utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikhailTSE/demi-utils.git"
+  },
+  "author": "Mikhail Demin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MikhailTSE/demi-utils/issues"
+  },
+  "homepage": "https://github.com/MikhailTSE/demi-utils#readme"
+}
