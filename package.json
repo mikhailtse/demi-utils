@@ -1,19 +1,29 @@
 {
   "name": "demi-utils",
-  "version": "1.0.0",
-  "description": "reactjs and js utilities",
+  "version": "0.0.1",
+  "description": "JavaScript Utilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MikhailTSE/demi-utils.git"
   },
-  "author": "Mikhail Demin",
+  "author": "Mikhail",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MikhailTSE/demi-utils/issues"
   },
-  "homepage": "https://github.com/MikhailTSE/demi-utils#readme"
+  "homepage": "https://github.com/MikhailTSE/demi-utils#readme",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "jest": "^24.9.0"
+  },
+  "dependencies": {},
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/src/__tests__/utils.js"
+    ]
+  }
 }

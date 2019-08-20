@@ -1,0 +1,63 @@
+{
+    "env": {
+        "amd": true, // defines require() and define() as global variables as per the amd spec.
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "impliedStrict": true,
+            "objectLiteralDuplicateProperties": false
+        },
+        "sourceType": "module",
+        "ecmaVersion": 2015,
+        "allowImportExportEverywhere": true
+    },
+    "rules": {
+        "no-irregular-whitespace": [
+            "error",
+            {
+                "skipTemplates": true,
+                "skipRegExps": true,
+                "skipComments": true
+            }
+        ],
+        "no-multi-spaces": "error",
+        "no-regex-spaces": "error",
+        "no-trailing-spaces": "warn",
+        "no-whitespace-before-property": "error",
+        "space-before-blocks": "error",
+        "no-extra-semi": "error",
+        "semi": ["error", "always"],
+        "no-unused-vars": ["error"],
+        "space-before-function-paren": ["error", "never"],
+        "keyword-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 150
+            }
+        ],
+        "space-infix-ops": "error",
+        "key-spacing": [
+            "error",
+            {
+                "beforeColon": false,
+                "afterColon": true
+            }
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "quotes": [2, "single"],
+        "strict": [2, "never"],
+    }
+}
