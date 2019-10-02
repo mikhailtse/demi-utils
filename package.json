@@ -47,5 +47,10 @@
     "testPathIgnorePatterns": [
       "<rootDir>/src/__tests__/utils.ts"
     ]
-  }
+  },
+  "files": [
+      "dist/**/*",
+      "LICENSE",
+      "/README.md"
+  ]
 }

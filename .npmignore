@@ -1,7 +1,0 @@
-# Configuration files
-tsconfig.json
-.eslintrc
-.gitignore
-
-# Sourcecode
-src

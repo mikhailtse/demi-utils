@@ -1,6 +1,6 @@
 {
     "env": {
-        "amd": true, // defines require() and define() as global variables as per the amd spec.
+        "amd": true // defines require() and define() as global variables as per the amd spec. 
     },
     "parserOptions": {
         "ecmaFeatures": {
@@ -58,6 +58,6 @@
             }
         ],
         "quotes": [2, "single"],
-        "strict": [2, "never"],
+        "strict": [2, "never"]
     }
 }
