@@ -1,6 +1,6 @@
 {
   "name": "demi-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript Utilities",
   "main": "dist/index.ts",
   "types": "dist/index.d.ts",
