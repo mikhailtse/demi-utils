@@ -2,9 +2,12 @@
   "name": "demi-utils",
   "version": "0.0.1",
   "description": "JavaScript Utilities",
-  "main": "src/index.js",
+  "main": "dist/index.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc --build --clean",
+    "link": "npm run build && cd dist && npm link"
   },
   "repository": {
     "type": "git",
@@ -17,13 +20,32 @@
   },
   "homepage": "https://github.com/MikhailTSE/demi-utils#readme",
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "jest": "^24.9.0"
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.9",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.5.3"
   },
   "dependencies": {},
   "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
     "testPathIgnorePatterns": [
-      "<rootDir>/src/__tests__/utils.js"
+      "<rootDir>/src/__tests__/utils.ts"
     ]
   }
 }

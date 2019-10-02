@@ -1,12 +1,14 @@
-var isFunction = require('../isFunction');
-var compose = require('../compose');
+import isFunction from '../isFunction';
+import compose from '../compose';
 
-var double = require('./utils').double;
-var asyncFunc = require('./utils').asyncFunc;
-var args = require('./utils').args;
-var symbol = require('./utils').symbol;
-var falseValues = require('./utils').falseValues;
-var fnFalse = require('./utils').fnFalse;
+import {
+    double,
+    asyncFunc,
+    args,
+    symbol,
+    falseValues,
+    fnFalse
+} from './utils';
 
 test('should return `true` for functions', function() {
     expect(isFunction(double)).toBe(true);
@@ -30,13 +32,7 @@ test('should return `false` for non-functions', function() {
     expect(isFunction('a')).toBe(false);
     expect(isFunction(symbol)).toBe(false);
 
-    if (document) {
-        expect(isFunction(document.getElementsByTagName('body'))).toBe(false);
-    }
-
-    var testFalseValues = falseValues.map(function(v) {
-        return isFunction(v);
-    });
+    const testFalseValues = falseValues.map((v: any) => isFunction(v));
     var expectFalseValues = falseValues.map(fnFalse);
     expect(testFalseValues).toStrictEqual(expectFalseValues);
 });
