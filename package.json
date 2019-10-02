@@ -1,14 +1,13 @@
 {
   "name": "demi-utils",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "JavaScript Utilities",
-  "main": "index.ts",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "clean": "rm -rf dist",
-    "copy": "cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/",
-    "build": "npm run clean && tsc && npm run copy",
+    "build": "npm run clean && tsc",
     "link": "npm run build && cd dist && npm link"
   },
   "repository": {
@@ -50,5 +49,5 @@
       "<rootDir>/src/__tests__/utils.ts"
     ]
   },
-  "files": ["*"]
+  "files": ["dist"]
 }
