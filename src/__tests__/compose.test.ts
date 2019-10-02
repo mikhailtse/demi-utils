@@ -1,8 +1,10 @@
-var compose = require('../compose');
+import compose from '../compose';
 
-var double = require('./utils').double;
-var square = require('./utils').square;
-var add = require('./utils').add;
+import {
+    double,
+    square,
+    add
+} from './utils';
 
 test('compose composes from right to left', function() {
     expect(compose(square)(5)).toBe(25);
